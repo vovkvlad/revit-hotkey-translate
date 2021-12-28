@@ -6,7 +6,7 @@ Table of Contents
 =================
 
 * [TODO](#todo)
-* [How To USe](#how-to-use)
+* [How To Use](#how-to-use)
 * [Rationale](#rationale)
 
 ## TODO
