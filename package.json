@@ -4,11 +4,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "build-dev": "npx pkg --debug -c package.json index.js",
+    "build": "npx pkg --debug -c package.json --compress GZip index.js"
   },
   "author": "",
   "license": "ISC",
+  "pkg": {
+    "scripts": "./index.js",
+    "assets": "dictionaries/**/*",
+    "outputPath": "dist",
+    "targets": ["macos", "win"]
+  },
   "dependencies": {
-    "fast-xml-parser": "^4.0.0-beta.5"
+    "fast-xml-parser": "^4.0.0-beta.5",
+    "inquirer": "^8.2.0"
+  },
+  "devDependencies": {
+    "pkg": "^5.5.1"
   }
 }
